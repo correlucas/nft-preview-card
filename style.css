@@ -80,6 +80,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  /* height: calc(100% - 2px); */
   border-radius: 7px;
   background: hsla(178, 100%, 50%, .5);
   display: flex;
@@ -233,65 +234,3 @@ body {
     margin-right: 8px;
   }
 }
-
-
-
-
-
-
-
-
-/* price section using img instead of pseudo element */
-
-/* 
-.info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 34px;
-}
-
-.price,
-.time-left {
-  display: flex;
-  align-items: center;
-  margin: auto 0;
-}
-
-.price img {
-  display: inline-block;
-  width: 11px;
-  height: 18px;
-  margin-right: 8px;
-}
-
-.time-left img {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
-} 
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-  background: hsla(178, 100%, 50%, .5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  cursor: pointer;
-  transition: ease-in-out;
-}
-
-.overlay:hover {
-  opacity: 1;
-  position: absolute;
-}
-
-
-*/
