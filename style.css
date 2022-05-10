@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--n-bg);
 }
 
@@ -72,6 +72,7 @@ body {
 .card {
   border-radius: 7px;
   max-width: 100%;
+  line-height: 0;
 }
 
 .overlay {
@@ -80,7 +81,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* height: calc(100% - 2px); */
   border-radius: 7px;
   background: hsla(178, 100%, 50%, .5);
   display: flex;
@@ -88,7 +88,7 @@ body {
   justify-content: center;
   opacity: 0;
   cursor: pointer;
-  transition: ease-in-out;
+  transition: ease-in-out 0.4s;
 }
 
 .overlay:hover {
@@ -179,8 +179,9 @@ body {
 }
 
 
-.creator span:hover {
+.creator a:hover {
   color: var(--p-cyan);
+  transition: ease-in-out 0.4s;
 }
 
 @media (max-width: 375px) {
@@ -225,7 +226,8 @@ body {
     margin: 0 auto;
   }
 
-  .creator a {
+  .creator a,
+  .creator h2 {
     font-size: 0.7rem;
     padding: 0;
   }
