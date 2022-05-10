@@ -64,38 +64,52 @@ body {
   background-color: var(--n-card);
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.03);
-  position: relative;
-}
-
-.card-box {
-  position: relative;
 }
 
 .card {
-  border-radius: 7px;
-  max-width: 100%;
+  position: relative;
 }
 
-.overlay {
+.card-img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.card-overlay {
+  display: flex;
   position: absolute;
+  border-radius: 7px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 7px;
-  background: hsla(178, 100%, 50%, .5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url(./images/icon-view.svg) no-repeat center;
+  background-color: hsl(178, 100%, 50%, 0.5);
   opacity: 0;
-  cursor: pointer;
-  transition: ease-in-out 0.4s;
 }
 
-.overlay:hover {
+.card-overlay:hover {
   opacity: 1;
-  position: absolute;
+  transition: 0.8s;
 }
+
+/* >* targets all direct child from card-overlay */
+.card-overlay>* {
+  transform: scale(300%);
+  transition: ease-out transform 0.8s;
+}
+
+.card-overlay:hover>* {
+  transform: scale(100%);
+  transition: ease-out transform 0.8s;
+}
+
 
 .container h1 {
   font-size: 1.25rem;
