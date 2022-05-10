@@ -172,6 +172,10 @@ body {
   padding-bottom: 16px;
 }
 
+.creator h2 {
+  font-size: 0.9rem;
+}
+
 .creator img {
   width: 32px;
   height: 32px;
@@ -227,6 +231,10 @@ body {
     display: flex;
     justify-content: center;
     margin: auto auto;
+    font-size: 0.7rem;
+  }
+
+  .creator h2 {
     font-size: 0.7rem;
   }
 
