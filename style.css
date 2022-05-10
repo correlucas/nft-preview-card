@@ -166,6 +166,7 @@ body {
 .creator {
   display: flex;
   align-items: center;
+  font-weight: 400;
   justify-content: flex-start;
   padding-top: 18px;
   padding-bottom: 16px;
