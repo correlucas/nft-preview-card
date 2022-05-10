@@ -45,11 +45,12 @@ Users should be able to:
 
 ### What I learned
 
-I learned a lots about how to using svg elements on hover states.
+I learned how to create hover states on an image inside a container with an svg icon output, It took some time to understand how to wrap the main div for the image and manage the css to display the hidden image with its transitions and transformation. I'm happy with the result. I did a lots of research to achieve it, but a tutorial from youtube helped me. Link: https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s
 
 ### Useful resources
 
 - [CSS filter generator to convert from black to target hex color](https://codepen.io/sosuke/pen/Pjoqqp) - This website helped me to calculate the color filter to use as a hover state for some SVG elements.
+- [Image Hover Text Overlay Effect with HTML & CSS - Web Design Tutorial](https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s) - Explains how to sete up the HTML and CSS file for the hover effect.
 
 
 ## Author
