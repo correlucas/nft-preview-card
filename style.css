@@ -9,7 +9,7 @@
   font-family: 'Outfit', sans-serif;
 }
 
-/* primary */
+/* colors */
 
 .p-blue {
   color: var(--p-blue);
@@ -19,7 +19,6 @@
   color: var(--p-cyan);
 }
 
-/* neutral */
 .n-bg {
   color: var(--n-bg);
 }
@@ -32,7 +31,6 @@
   color: var(--n-line);
 }
 
-
 .n-white {
   color: var(--n-white);
 }
@@ -44,6 +42,10 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+* img {
+  display: block;
 }
 
 body {
@@ -72,7 +74,6 @@ body {
 .card {
   border-radius: 7px;
   max-width: 100%;
-  line-height: 0;
 }
 
 .overlay {
@@ -184,6 +185,7 @@ body {
   transition: ease-in-out 0.4s;
 }
 
+/* responsive */
 @media (max-width: 375px) {
   .container {
     flex-wrap: wrap;
@@ -223,13 +225,8 @@ body {
   .creator {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-  }
-
-  .creator a,
-  .creator h2 {
+    margin: auto auto;
     font-size: 0.7rem;
-    padding: 0;
   }
 
   .creator img {
