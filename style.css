@@ -166,13 +166,13 @@ body {
 .creator {
   display: flex;
   align-items: center;
-  font-weight: 400;
   justify-content: flex-start;
   padding-top: 18px;
   padding-bottom: 16px;
 }
 
 .creator h2 {
+  font-weight: 300;
   font-size: 1.1rem;
 }
 
