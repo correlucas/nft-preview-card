@@ -1,6 +1,7 @@
 :root {
   --p-blue: hsl(215, 51%, 70%);
   --p-cyan: hsl(178, 100%, 50%);
+  --p-purple: hsl(321, 100%, 50%);
 
   --n-bg: hsl(217, 54%, 11%);
   --n-card: hsl(216, 50%, 16%);
@@ -64,8 +65,15 @@ body {
   background-color: var(--n-card);
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.03);
+  transition: ease-in-out 0.8s;
 }
 
+.container:hover {
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+  transition: ease-in-out 0.8s;
+}
+
+/* card hover effect */
 .card {
   position: relative;
 }
@@ -92,16 +100,17 @@ body {
   background-image: url(./images/icon-view.svg) no-repeat center;
   background-color: hsl(178, 100%, 50%, 0.5);
   opacity: 0;
+  transition: ease-in-out 0.8s;
 }
 
 .card-overlay:hover {
   opacity: 1;
-  transition: 0.8s;
+  transition: ease-out transform 0.8s;
 }
 
 /* >* targets all direct child from card-overlay */
 .card-overlay>* {
-  transform: scale(300%);
+  transform: scale(150%);
   transition: ease-out transform 0.8s;
 }
 
@@ -118,9 +127,27 @@ body {
 }
 
 .container h1:hover {
-  color: var(--p-cyan);
   cursor: pointer;
   transition: ease-in-out 0.4s;
+
+  animation-name: spincolor;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spincolor {
+  0% {
+    color: var(--p-cyan);
+  }
+
+  50% {
+    color: var(--p-purple);
+  }
+
+  100% {
+    color: var(--p-cyan);
+  }
 }
 
 .container p {
@@ -168,6 +195,16 @@ body {
   margin-right: 8px;
 }
 
+/* rotate icon effect */
+.price li::before {
+  transition: ease-in-out 0.8s;
+}
+
+.price li:hover::before {
+  transform: rotate(360deg);
+  transition: ease-in-out 0.8s;
+}
+
 
 .line {
   display: flex;
@@ -198,10 +235,33 @@ body {
   border-radius: 50px;
 }
 
+.creator a {
+  transition: ease-in-out 0.4s;
+}
 
+/* spin color hover effect */
 .creator a:hover {
   color: var(--p-cyan);
   transition: ease-in-out 0.4s;
+
+  animation-name: spincolor;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spincolor {
+  0% {
+    color: var(--p-cyan);
+  }
+
+  50% {
+    color: var(--p-purple);
+  }
+
+  100% {
+    color: var(--p-cyan);
+  }
 }
 
 /* responsive */
