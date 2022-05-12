@@ -55,7 +55,10 @@ I did a lots of research to achieve it, but a tutorial from youtube helped me. L
 ### Useful resources
 
 - [CSS filter generator to convert from black to target hex color](https://codepen.io/sosuke/pen/Pjoqqp) - This website helped me to calculate the color filter to use as a hover state for some SVG elements.
-- [Image Hover Text Overlay Effect with HTML & CSS - Web Design Tutorial](https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s) - Explains how to sete up the HTML and CSS file for the hover effect.
+- 
+- [Image Hover Text Overlay Effect with HTML & CSS - Web Design Tutorial](https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s) - Explains how to set up the HTML and CSS file for the hover effect.
+
+- [Multicolor hover effect](https://codepen.io/divinector/pen/JVVJYY) - Code pen for multiple colors on hover
 
 
 ## Author
