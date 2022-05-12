@@ -119,7 +119,6 @@ body {
   transition: ease-out transform 0.8s;
 }
 
-
 .container h1 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -204,7 +203,6 @@ body {
   transform: rotate(360deg);
   transition: ease-in-out 0.8s;
 }
-
 
 .line {
   display: flex;

@@ -45,7 +45,12 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to create hover states on an image inside a container with an svg icon output, It took some time to understand how to wrap the main div for the image and manage the css to display the hidden image with its transitions and transformation. I'm happy with the result. I did a lots of research to achieve it, but a tutorial from youtube helped me. Link: https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s
+I learned how to create hover states on an image inside a container with an svg icon output, It took some time to understand how to wrap the main div for the image and manage the css to display the hidden image with its transitions and transformation. I'm happy with the result. 
+
+- I added custom hover state on h1, price section and creator section, using a spinning color animation and transform(rotate) on icons.
+
+
+I did a lots of research to achieve it, but a tutorial from youtube helped me. Link: https://www.youtube.com/watch?v=exb2ab72Xhs&t=591s
 
 ### Useful resources
 
