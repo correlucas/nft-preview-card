@@ -54,7 +54,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--n-bg);
+  background: linear-gradient(180deg, #0D1A2D 0%, #042D5E 100%);
+}
+
+.container:hover {
+  filter: saturate(1.5);
+  filter: drop-shadow(17px 15px 22px rgba(0, 0, 0, 0.));
+  transition: ease-in-out 0.8s;
+  border: 0.5px solid #ffffff23;
+  transform: scale(0.97);
 }
 
 .container {
@@ -62,16 +70,32 @@ body {
   flex-direction: column;
   max-width: 350px;
   padding: 25px;
-  background-color: var(--n-card);
+  background: linear-gradient(161.11deg, #13396b -0.73%, rgba(21, 39, 63, 0.3) 101.82%);
   border-radius: 15px;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.03);
+  border: 0.5px solid #00000000;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   transition: ease-in-out 0.8s;
+  transform: scale(1);
+  -webkit-animation: slideIn 1s ease;
+  animation: slideIn 1.5s ease;
 }
 
-.container:hover {
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
-  transition: ease-in-out 0.8s;
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: scale(0.7);
+    filter: saturate(2);
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: saturate(1);
+  }
 }
+
 
 /* card hover effect */
 .card {
@@ -82,6 +106,11 @@ body {
   display: block;
   width: 100%;
   border-radius: 7px;
+}
+
+
+.card-img:hover {
+  transform: rotate(180deg);
 }
 
 .card-overlay {
