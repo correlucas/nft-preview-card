@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-preview-card-componente-pure-html-css-ryoB5ePU5)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-preview-card-vanilla-css-custom-design-and-hover-effects-b8D1k9PDmX)
 - Live Site URL: [Live Site at Vercel](https://nft-preview-card-livid-rho.vercel.app/)
 
 ## My process
